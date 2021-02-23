@@ -20,6 +20,9 @@ componentDidMount() {
   .then(users => this.setState({ monsters: users })
   )
 }
+onSearchChange = event => {
+  this.setState({ searchField: event.target.value });
+}
 
 
   render(){
